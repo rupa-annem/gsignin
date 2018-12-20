@@ -19,9 +19,12 @@
           dataType: 'json',
           data: token
         }).done(function(data) {
-           var  temp=JSON.parse(data);
-            console.log(temp);
-            document.getElementById("dd1").innerHTML=JSON.parse(temp);
+           console.log(data);
+          document.getElementById("dd1").innerHTML=data;
+           
+           //var  temp=JSON.parse(data);
+            //console.log(temp);
+           // document.getElementById("dd1").innerHTML=JSON.parse(temp);
            
           });
       }
